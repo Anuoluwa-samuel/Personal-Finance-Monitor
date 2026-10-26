@@ -1,5 +1,11 @@
 # Ispentit: Phase 1 Plan (architecture, no code yet)
 
+> **Status (Phase 10): this was the Phase 1 plan and is now historical.** The application was built to it, with these differences:
+> Better Auth text ids for the auth tables; `cacheComponents` disabled and every page rendered per request (CSP nonce); recurring items are *planned* until
+> confirmed; CSV import, accounts, recurring rules, settings, rate limits, and Terms/Privacy pages were added; shadcn/ui and React Hook Form were not used.
+> For the current design read [ARCHITECTURE.md](ARCHITECTURE.md).
+
+
 Status: proposal. Nothing is scaffolded. The folder was empty, so there are no existing conventions to inherit.
 
 ## 1. Architecture

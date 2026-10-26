@@ -1,0 +1,13 @@
+services:
+  db:
+    image: postgres:17
+    environment:
+      POSTGRES_USER: ispentit
+      POSTGRES_PASSWORD: ispentit
+      POSTGRES_DB: ispentit
+    ports:
+      - "54340:5432"
+    volumes:
+      - ispentit-pg:/var/lib/postgresql/data
+volumes:
+  ispentit-pg:

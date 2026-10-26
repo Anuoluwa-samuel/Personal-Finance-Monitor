@@ -1,9 +1,10 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
-  cacheComponents: true,
-  partialPrefetching: true,
+  // Pages render per request: the CSP nonce is generated per request and
+  // financial data must never end up in a shared static shell or cache.
+  cacheComponents: false,
+  poweredByHeader: false,
   turbopack: {
     rules: {
       "*.css": {
